@@ -39,5 +39,4 @@ fabric.properties
 .gitignore
 pom.xml
 spring_examples.iml
-src/
 target/
