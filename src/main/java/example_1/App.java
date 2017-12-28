@@ -13,8 +13,7 @@ public class App {
         String message = msg.replaceAll(
                 client.getId(), client.getFullname()
         );
-        System.out.println("aaaaaaaaaaaaaaaaa");
-        System.out.println("aaaaaaaaaaaaaaaaa");
+        System.out.println("bbbbbbbbbbbbbbbbbbbbbbb");
         eventLogger.logEvent(message);
     }
 
