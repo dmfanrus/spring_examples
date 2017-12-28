@@ -14,6 +14,7 @@ public class App {
                 client.getId(), client.getFullname()
         );
         System.out.println("aaaaaaaaaaaaaaaaa");
+        System.out.println("aaaaaaaaaaaaaaaaa");
         eventLogger.logEvent(message);
     }
 
