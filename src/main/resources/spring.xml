@@ -5,10 +5,16 @@
  		http://www.springframework.org/schema/beans
  		http://www.springframework.org/schema/beans/spring-beans-5.0.2.xsd">
 
-    <bean id="client" class="example_1.Client"/>
+    <bean id="client" class="example_1.Client">
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg index="1" value="John Smith"/>
+    </bean>
 
-    <bean id="eventLogger" class="example_1.interfaces.ConsoleEventLogger"/>
+    <bean id="eventLogger" class="example_1.ConsoleEventLogger"/>
 
-    <bean id="app" class="example_1.App"/>
+    <bean id="app" class="example_1.App">
+        <constructor-arg index="0" ref="client"/>
+        <constructor-arg index="1" ref="eventLogger"/>
+    </bean>
 
 </beans>
